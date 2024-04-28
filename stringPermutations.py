@@ -1,6 +1,8 @@
 # Problem description: You are given a string of characters.
 # You have to print all possible combinations of those characters (all permutations).
 # You should not repeat any character. Assume that you will be given distinct characters in the string.
+import copy
+
 
 def permuations_backtracking(str):
     permutations([],str)
@@ -22,8 +24,22 @@ def permutations(result, str):
 
 # Given a set of n distinct numbers return its power set.
 
+def powerset_backtracking(input):
+    result = []
+    powerset(len(input)-1, [], input, result)
+    return result
+def powerset(pointer, choices_made, input, result):
+    if pointer < 0:
+        result.append(copy.deepcopy(choices_made))
+        return
+
+    choices_made.append(input[pointer])
+    powerset(pointer-1, choices_made, input, result)
+
+    choices_made.pop()
+    powerset(pointer-1, choices_made, input, result)
 
 
 
 if __name__ == "__main__":
-    permuations_backtracking("ABC")
+    print(powerset_backtracking("ABC"))
