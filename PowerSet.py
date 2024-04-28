@@ -1,3 +1,8 @@
+# Dominic Fantauzzo
+# fantauzd
+# CS 325 - 400
+# Dynamic Programming and Backtracking
+
 # Given a set of n distinct numbers return its power set.
 import copy
 

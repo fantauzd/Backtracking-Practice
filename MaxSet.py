@@ -1,3 +1,8 @@
+# Dominic Fantauzzo
+# fantauzd
+# CS 325 - 400
+# Dynamic Programming and Backtracking
+
 # Given a list of numbers, return a subsequence of non-consecutive numbers in the form of a
 # list that would have the maximum sum. When the numbers are all negatives your code
 # should return []
