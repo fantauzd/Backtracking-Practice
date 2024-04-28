@@ -2,6 +2,9 @@
 # You have to print all possible combinations of those characters (all permutations).
 # You should not repeat any character. Assume that you will be given distinct characters in the string.
 
+def permuations_backtracking(str):
+    permutations([],str)
+
 def permutations(result, str):
     #base Case, print the result when we obtain the result using all characters
     if(len(result) == len(str)):
@@ -17,7 +20,6 @@ def permutations(result, str):
             #Once we have exhausted all possible paths we backtrack
             result.pop()
 
-def permuations_backtracking(str):
-    permutations([],str)
 
-permuations_backtracking("ABC")
+if __name__ == "__main__":
+    permuations_backtracking("ABC")
