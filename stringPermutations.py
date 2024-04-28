@@ -20,6 +20,10 @@ def permutations(result, str):
             #Once we have exhausted all possible paths we backtrack
             result.pop()
 
+# Given a set of n distinct numbers return its power set.
+
+
+
 
 if __name__ == "__main__":
     permuations_backtracking("ABC")
