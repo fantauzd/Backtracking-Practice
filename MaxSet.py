@@ -51,4 +51,4 @@ def max_independent_set(nums):
 
 
 if __name__ == "__main__":
-    print(max_independent_set([]))
+    print(max_independent_set([-10,-10, 0, -6]))
