@@ -52,15 +52,15 @@ def is_attacked(row, column, board, N):
         if row - p >= 0 and column + p <= N-1:
             if board[row-p][column+p] == 1:
                 return True
-        # check SE
-        if row + p <= N-1  and column + p <= N-1:
-            if board[row+p][column+p] == 1:
-                return True
-        # check SW
-        if row + p <= N-1 and column - p >= 0:
-            if board[row+p][column-p] == 1:
-                return True
+        # # check SE
+        # if row + p <= N-1  and column + p <= N-1:
+        #     if board[row+p][column+p] == 1:
+        #         return True
+        # # check SW
+        # if row + p <= N-1 and column - p >= 0:
+        #     if board[row+p][column-p] == 1:
+        #         return True
 
 
 if __name__ == "__main__":
-    print(n_Queens(3))
+    print(n_Queens(4))
