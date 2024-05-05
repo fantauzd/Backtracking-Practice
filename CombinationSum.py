@@ -21,7 +21,8 @@ def combination_sum_helper(nums, target, result, pointer, combination):
         # try each value in the combination
         combination.append(nums[i])
         combination_sum_helper(nums, target - nums[i], result, i, combination)
+        # backtrack
         combination.pop()
 
 if __name__ == "__main__":
-    print(combination_sum([2, 3, 6, 7], 7))
+    print(combination_sum([1, 2, 3, 6, 7], 7))
