@@ -49,7 +49,7 @@ def is_attacked(row, column, board, N):
             if board[row-p][column-p] == 1:
                 return True
         # check NE
-        if (row - p) >= 0 and (column + p) <= N-1:
+        if row - p >= 0 and column + p <= N-1:
             if board[row-p][column+p] == 1:
                 return True
         # check SE
