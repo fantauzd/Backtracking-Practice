@@ -60,3 +60,7 @@ def is_attacked(row, column, board, N):
         if column + p >= 0 and row - p >= 0:
             if board[row+p][column-p] == 1:
                 return True
+
+
+if __name__ == "__main__":
+    print(n_Queens(3))
