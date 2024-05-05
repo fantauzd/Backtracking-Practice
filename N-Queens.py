@@ -5,6 +5,9 @@
 def n_Queens(N):
     '''
     Returns an NxN board with N-queens placed in correct positions.
+    Time complexity in O(n!) as each row needs a queen and we eliminate a column after filling each row,
+    thus we n options on first row and n-1 options on second row. Since we may need to try every combo,
+    we multiply these options together and get O(n!).
     '''
     board = [[0 for x in range(N)] for x in range(N)]
     solve_n_Queens(board, 0, N, N)
