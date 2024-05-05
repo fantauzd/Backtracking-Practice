@@ -45,19 +45,19 @@ def is_attacked(row, column, board, N):
     # check diagonal
     for p in range(1, N):
         # check NW
-        if column - p >= 0 and row - p >= 0:
+        if row - p and column - p >= 0 >= 0:
             if board[row-p][column-p] == 1:
                 return True
         # check NE
-        if column - p >= 0 and row + p >= 0:
+        if row - p >= 0 and column + p >= 0:
             if board[row-p][column+p] == 1:
                 return True
         # check SE
-        if column + p >= 0 and row + p >= 0:
+        if row + p >= 0 and column + p >= 0:
             if board[row+p][column+p] == 1:
                 return True
         # check SW
-        if column + p >= 0 and row - p >= 0:
+        if row + p >= 0 and column - p >= 0:
             if board[row+p][column-p] == 1:
                 return True
 
